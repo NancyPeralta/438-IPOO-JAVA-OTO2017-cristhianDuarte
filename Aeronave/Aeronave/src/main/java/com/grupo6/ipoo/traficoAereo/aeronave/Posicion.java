@@ -1,4 +1,4 @@
-package com.grupo6.ipoo.traficoAereo.aernave;
+package com.grupo6.ipoo.traficoAereo.aeronave;
 
 import java.util.List;
 
@@ -8,6 +8,12 @@ public class Posicion {
 	private double longitud;
 	public Posicion(){
 		
+	}
+	public Posicion(int id, double latitud, double longitud) {
+		super();
+		this.id = id;
+		this.latitud = latitud;
+		this.longitud = longitud;
 	}
 	public int getId() {
 		return id;
@@ -27,12 +33,7 @@ public class Posicion {
 	public void setLongitud(double longitud) {
 		this.longitud = longitud;
 	}
-	public Posicion(int id, double latitud, double longitud) {
-		super();
-		this.id = id;
-		this.latitud = latitud;
-		this.longitud = longitud;
-	}
+
 	
 	
 	

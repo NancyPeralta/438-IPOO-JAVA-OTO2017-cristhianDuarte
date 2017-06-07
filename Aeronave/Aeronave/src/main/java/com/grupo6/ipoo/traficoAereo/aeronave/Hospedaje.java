@@ -1,4 +1,4 @@
-package com.grupo6.ipoo.traficoAereo.aernave;
+package com.grupo6.ipoo.traficoAereo.aeronave;
 
 import java.util.Date;
 import java.util.List;
@@ -7,13 +7,21 @@ public class Hospedaje {
 	private int id;
 	private Date inicio;
 	private Date fin;
-	private List<NoResidente> noResidente;
+	private NoResidente noResidente;
 	private Hangar hangar;
 	
 	public Hospedaje(){
 		
 	}
-
+	public Hospedaje(int id, Date inicio, Date fin, NoResidente noResidente, Hangar hangar) {
+		super();
+		this.id = id;
+		this.inicio = inicio;
+		this.fin = fin;
+		this.noResidente = noResidente;
+		this.hangar = hangar;
+		this.noResidente= noResidente;
+	}
 	public int getId() {
 		return id;
 	}
@@ -38,13 +46,7 @@ public class Hospedaje {
 		this.fin = fin;
 	}
 
-	public List<NoResidente> getNoResidente() {
-		return noResidente;
-	}
-
-	public void setNoResidente(List<NoResidente> noResidente) {
-		this.noResidente = noResidente;
-	}
+	
 
 	public Hangar getHangar() {
 		return hangar;
@@ -54,13 +56,13 @@ public class Hospedaje {
 		this.hangar = hangar;
 	}
 
-	public Hospedaje(int id, Date inicio, Date fin, List<NoResidente> noResidente, Hangar hangar) {
-		super();
-		this.id = id;
-		this.inicio = inicio;
-		this.fin = fin;
+	
+
+	public void setNoResidente(NoResidente noResidente) {
 		this.noResidente = noResidente;
-		this.hangar = hangar;
+	}
+	public NoResidente getNoResidente() {
+		return noResidente;
 	}
 	
 	

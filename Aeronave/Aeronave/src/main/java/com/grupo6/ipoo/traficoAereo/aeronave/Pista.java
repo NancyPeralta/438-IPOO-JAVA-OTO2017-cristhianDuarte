@@ -1,4 +1,4 @@
-package com.grupo6.ipoo.traficoAereo.aernave;
+package com.grupo6.ipoo.traficoAereo.aeronave;
 
 import java.util.List;
 

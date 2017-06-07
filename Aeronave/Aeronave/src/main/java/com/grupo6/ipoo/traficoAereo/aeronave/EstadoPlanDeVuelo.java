@@ -1,4 +1,4 @@
-package com.grupo6.ipoo.traficoAereo.aernave;
+package com.grupo6.ipoo.traficoAereo.aeronave;
 
 public class EstadoPlanDeVuelo {
 	private int id;
@@ -8,7 +8,12 @@ public class EstadoPlanDeVuelo {
 	public EstadoPlanDeVuelo(){
 		
 	}
-
+	public EstadoPlanDeVuelo(int id, String nombre, String descripcion) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+	}
 	public int getId() {
 		return id;
 	}
@@ -33,12 +38,7 @@ public class EstadoPlanDeVuelo {
 		this.descripcion = descripcion;
 	}
 
-	public EstadoPlanDeVuelo(int id, String nombre, String descripcion) {
-		super();
-		this.id = id;
-		this.nombre = nombre;
-		this.descripcion = descripcion;
-	}
+	
 	
 	
 	

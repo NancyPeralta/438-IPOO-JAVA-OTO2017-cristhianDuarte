@@ -1,4 +1,4 @@
-package com.grupo6.ipoo.traficoAereo.aernave;
+package com.grupo6.ipoo.traficoAereo.aeronave;
 
 public class TipoDeAvion {
 	private int id;
@@ -11,7 +11,15 @@ public class TipoDeAvion {
 	public TipoDeAvion(){
 		
 	}
-
+	//constructor2
+		public TipoDeAvion(int id, String nombre, String descripcion, Capacidad capacidad) {
+			super();
+			this.id = id;
+			this.nombre = nombre;
+			this.descripcion = descripcion;
+			this.capacidad = capacidad;
+		}
+		
 	//metodos
 	public int getId() {
 		return id;
@@ -45,14 +53,6 @@ public class TipoDeAvion {
 		this.capacidad = capacidad;
 	}
 
-	//constructor2
-	public TipoDeAvion(int id, String nombre, String descripcion, Capacidad capacidad) {
-		super();
-		this.id = id;
-		this.nombre = nombre;
-		this.descripcion = descripcion;
-		this.capacidad = capacidad;
-	}
 	
 	
 	

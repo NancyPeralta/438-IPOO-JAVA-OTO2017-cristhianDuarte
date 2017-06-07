@@ -1,4 +1,4 @@
-package com.grupo6.ipoo.traficoAereo.aernave;
+package com.grupo6.ipoo.traficoAereo.aeronave;
 
 public class Dimension {
 	private int id;
@@ -9,6 +9,15 @@ public class Dimension {
 	public Dimension(){
 		
 	}
+	
+	public Dimension(int id, int alto, int ancho, int largo) {
+		super();
+		this.id = id;
+		this.alto = alto;
+		this.ancho = ancho;
+		this.largo = largo;
+	}
+	
 
 	public int getId() {
 		return id;
@@ -42,13 +51,6 @@ public class Dimension {
 		this.largo = largo;
 	}
 
-	public Dimension(int id, int alto, int ancho, int largo) {
-		super();
-		this.id = id;
-		this.alto = alto;
-		this.ancho = ancho;
-		this.largo = largo;
-	}
 	
 	
 	

@@ -1,4 +1,4 @@
-package com.grupo6.ipoo.traficoAereo.aernave;
+package com.grupo6.ipoo.traficoAereo.aeronave;
 
 import java.util.List;
 
@@ -10,6 +10,12 @@ public class Gps {
 	public Gps(){
 		
 	}
+	public Gps(int id, List<Posicion> posicion) {
+		super();
+		this.id = id;
+		this.posicion = posicion;
+	}
+	
 
 	public int getId() {
 		return id;
@@ -27,11 +33,6 @@ public class Gps {
 		this.posicion = posicion;
 	}
 
-	public Gps(int id, List<Posicion> posicion) {
-		super();
-		this.id = id;
-		this.posicion = posicion;
-	}
 	
 	
 	
